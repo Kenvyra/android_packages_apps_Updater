@@ -33,7 +33,6 @@ public class UpdateBase implements UpdateBaseInfo {
         mDownloadUrl = update.getDownloadUrl();
         mDownloadId = update.getDownloadId();
         mTimestamp = update.getTimestamp();
-        mType = update.getType();
         mVersion = update.getVersion();
         mFileSize = update.getFileSize();
     }
@@ -63,15 +62,6 @@ public class UpdateBase implements UpdateBaseInfo {
 
     public void setTimestamp(long timestamp) {
         mTimestamp = timestamp;
-    }
-
-    @Override
-    public String getType() {
-        return mType;
-    }
-
-    public void setType(String type) {
-        mType = type;
     }
 
     @Override
